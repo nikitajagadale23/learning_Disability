@@ -1,0 +1,91 @@
+.App {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .tabs {
+    margin: 20px;
+  }
+  
+  .tabs button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .form-container {
+    margin: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  form input {
+    padding: 8px;
+    width: 200px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .age-selector {
+    margin-top: 20px;
+  }
+  
+  .age-selector button {
+    padding: 10px 20px;
+    margin: 5px;
+  }
+  
+  .quiz-container {
+    margin-top: 20px;
+  }
+  
+  .question {
+    margin: 15px 0;
+  }
+  
+  button {
+    margin: 5px;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  .App {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .age-selector button,
+  .submit-button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .question {
+    margin-bottom: 20px;
+  }
+  
+  .question button {
+    margin: 5px;
+    padding: 8px 16px;
+  }
+  
+  .question .selected {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  textarea {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 10px;
+  }
+  
