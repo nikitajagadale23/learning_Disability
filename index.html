@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Learning Disability Screening</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Learning Disability Screening Portal</h1>
+        </header>
+        <main>
+            <section id="login-section">
+                <div class="login-container">
+                    <div class="login-tabs">
+                        <button class="tab-btn active" data-tab="parent-login">Parent</button>
+                        <button class="tab-btn" data-tab="teacher-login">Teacher</button>
+                        <button class="tab-btn" data-tab="student-login">Student</button>
+                    </div>
+
+                    <!-- Parent Login and Register -->
+                    <div id="parent-login" class="login-tab-content active">
+                        <form id="parent-login-form">
+                            <h2>Parent Login</h2>
+                            <div class="form-group">
+                                <label for="parent-email">Email</label>
+                                <input type="email" id="parent-email" required>
+                                <div id="parent-email-error" class="error-message">Invalid email format</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="parent-password">Password</label>
+                                <input type="password" id="parent-password" required>
+                                <div id="parent-password-error" class="error-message">Password must be at least 6 characters</div>
+                            </div>
+                            <button type="submit" class="btn-primary">Login</button>
+                            <p>Not registered? <a href="#" id="parent-register-link">Register here</a></p>
+                        </form>
+                        <form id="parent-register-form" class="hidden">
+                            <h2>Parent Registration</h2>
+                            <div class="form-group">
+                                <label for="parent-name-register">Full Name</label>
+                                <input type="text" id="parent-name-register" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="parent-email-register">Email</label>
+                                <input type="email" id="parent-email-register" required>
+                                <div id="parent-email-error-register" class="error-message">Invalid email format</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="parent-password-register">Password</label>
+                                <input type="password" id="parent-password-register" required>
+                                <div id="parent-password-error-register" class="error-message">Password must be at least 6 characters</div>
+                            </div>
+                            <button type="submit" class="btn-primary">Register</button>
+                            <p>Already registered? <a href="#" id="parent-login-link">Login here</a></p>
+                        </form>
+                    </div>
+
+                    <!-- Teacher Login and Register -->
+                    <div id="teacher-login" class="login-tab-content">
+                        <form id="teacher-login-form">
+                            <h2>Teacher Login</h2>
+                            <div class="form-group">
+                                <label for="teacher-email">Email</label>
+                                <input type="email" id="teacher-email" required>
+                                <div id="teacher-email-error" class="error-message">Invalid email format</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="teacher-password">Password</label>
+                                <input type="password" id="teacher-password" required>
+                                <div id="teacher-password-error" class="error-message">Password must be at least 6 characters</div>
+                            </div>
+                            <button type="submit" class="btn-primary">Login</button>
+                            <p>Not registered? <a href="#" id="teacher-register-link">Register here</a></p>
+                        </form>
+                        <form id="teacher-register-form" class="hidden">
+                            <h2>Teacher Registration</h2>
+                            <div class="form-group">
+                                <label for="teacher-name-register">Full Name</label>
+                                <input type="text" id="teacher-name-register" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="teacher-email-register">Email</label>
+                                <input type="email" id="teacher-email-register" required>
+                                <div id="teacher-email-error-register" class="error-message">Invalid email format</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="teacher-password-register">Password</label>
+                                <input type="password" id="teacher-password-register" required>
+                                <div id="teacher-password-error-register" class="error-message">Password must be at least 6 characters</div>
+                            </div>
+                            <button type="submit" class="btn-primary">Register</button>
+                            <p>Already registered? <a href="#" id="teacher-login-link">Login here</a></p>
+                        </form>
+                    </div>
+
+                    <!-- Student Login and Register -->
+                    <div id="student-login" class="login-tab-content">
+                        <form id="student-login-form">
+                            <h2>Student Login</h2>
+                            <div class="form-group">
+                                <label for="student-email">Email</label>
+                                <input type="email" id="student-email" required>
+                                <div id="student-email-error" class="error-message">Invalid email format</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="student-password">Password</label>
+                                <input type="password" id="student-password" required>
+                                <div id="student-password-error" class="error-message">Password must be at least 6 characters</div>
+                            </div>
+                            <button type="submit" class="btn-primary">Login</button>
+                            <p>Not registered? <a href="#" id="student-register-link">Register here</a></p>
+                        </form>
+                        <form id="student-register-form" class="hidden">
+                            <h2>Student Registration</h2>
+                            <div class="form-group">
+                                <label for="student-name-register">Full Name</label>
+                                <input type="text" id="student-name-register" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="student-email-register">Email</label>
+                                <input type="email" id="student-email-register" required>
+                                <div id="student-email-error-register" class="error-message">Invalid email format</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="student-password-register">Password</label>
+                                <input type="password" id="student-password-register" required>
+                                <div id="student-password-error-register" class="error-message">Password must be at least 6 characters</div>
+                            </div>
+                            <button type="submit" class="btn-primary">Register</button>
+                            <p>Already registered? <a href="#" id="student-login-link">Login here</a></p>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div id="notification" class="notification hidden">
+            <span id="notification-message"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
